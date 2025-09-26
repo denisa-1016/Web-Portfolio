@@ -21,11 +21,11 @@ export default function Navbar(){
                 <span></span>
             </div>
 
-            <div className="navLinks">
-                <Link href="#home">Home</Link>
-                <Link href="#about">About</Link>
-                <Link href="#projects">Projects</Link>
-                <Link href="#contact">Contact</Link>
+            <div className={`navLinks ${isOpen ? "active" : ""}`}>
+                <Link href="#home" onClick={() => setIsOpen(false)}>Home</Link>
+                <Link href="#about" onClick={() => setIsOpen(false)}>About</Link>
+                <Link href="#projects" onClick={() => setIsOpen(false)}>Projects</Link>
+                <Link href="#contact" onClick={() => setIsOpen(false)}>Contact</Link>
             </div>
         </nav>
     );

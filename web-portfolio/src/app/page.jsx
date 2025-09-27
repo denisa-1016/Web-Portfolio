@@ -2,11 +2,12 @@ import Navbar from "@/app/components/Navbar";
 import styles from "./page.module.css";
 import Image from "next/image";
 import profilePic from "./Poza.png";
+import Footer from "@/app/components/Footer";
 
 export default function Home(){
     return (
         <main>
-            <Navbar />
+            <Navbar></Navbar>
             <section id="home" className={styles.container}>
                 <div className={styles.left}>
                     <h1>Hi There! I'm Denisa</h1>
@@ -18,6 +19,7 @@ export default function Home(){
                     <Image src={profilePic} alt="Thats me!"></Image>
                 </div>
             </section>
+            <Footer></Footer>
         </main>
     );
 }

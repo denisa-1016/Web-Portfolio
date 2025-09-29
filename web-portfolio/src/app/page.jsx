@@ -1,7 +1,7 @@
 import Navbar from "@/app/components/Navbar";
 import styles from "./page.module.css";
 import Image from "next/image";
-import profilePic from "./Poza.png";
+import profilePic from "./pozanoua.jpg";
 import Footer from "@/app/components/Footer";
 
 export default function Home(){
